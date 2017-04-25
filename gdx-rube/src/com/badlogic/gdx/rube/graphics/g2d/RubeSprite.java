@@ -96,16 +96,16 @@ public class RubeSprite extends Sprite {
 	}
 	
 	@Override
-	public void draw (SpriteBatch spriteBatch) {
+	public void draw (Batch batch) {
 		updateBodyInfos();
-		super.draw(spriteBatch);
+		super.draw(batch);
 	}
 
 	@Override
-	public void draw (SpriteBatch spriteBatch, float alphaModulation) {
+	public void draw (Batch batch, float alphaModulation) {
 		
 		updateBodyInfos();
-		super.draw(spriteBatch, alphaModulation);
+		super.draw(batch, alphaModulation);
 	}
 	
 	protected void updateBodyInfos() {
